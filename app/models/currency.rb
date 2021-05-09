@@ -15,7 +15,9 @@ class Currency < ApplicationRecord
             url + self.slug, 
             :headers => headers
         )
-        response = JSON.parse(request.body)["data"]["1"]["quote"]["USD"]["price"]
+        
+        currency_id = JSON.parse(request.body)["data"].keys[0]
+        response = JSON.parse(request.body)["data"][currency_id.to_s]["quote"]["USD"]["price"]
         
     end
     
