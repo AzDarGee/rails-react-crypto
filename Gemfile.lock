@@ -107,6 +107,8 @@ GEM
     msgpack (1.4.2)
     multi_xml (0.6.0)
     nio4r (2.5.7)
+    nokogiri (1.11.3-x86_64-darwin)
+      racc (~> 1.4)
     nokogiri (1.11.3-x86_64-linux)
       racc (~> 1.4)
     pg (1.2.3)
@@ -204,6 +206,7 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
+  x86_64-darwin-20
   x86_64-linux
 
 DEPENDENCIES
@@ -230,4 +233,4 @@ RUBY VERSION
    ruby 3.0.0p0
 
 BUNDLED WITH
-   2.2.3
+   2.2.15
